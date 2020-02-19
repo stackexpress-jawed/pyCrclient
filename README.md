@@ -24,6 +24,15 @@ python3 -m venv venv
 venv/bin/pip install -r requirements.txt
 ```
 
+- Edit `config.py` and put your username & password
+```python
+
+USERNAME = 'your_user_name'
+PASSWORD = 'your_secret_password'
+BASE_URL = 'http://192.168.0.1:8090/'
+
+```
+
 - Run auto_login.py
 ```shell
 venv/bin/python auto_login.py
@@ -31,3 +40,4 @@ venv/bin/python auto_login.py
 
 ## TODO:
 - Daemonize the auto_login
+- Store encrypted username & password
